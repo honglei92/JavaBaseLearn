@@ -7,6 +7,7 @@ import java.util.Date;
 public class StringTest {
 	public static void main(String[] args) {
 		System.out.println(toDate("20170329 132324"));
+		System.out.println("abc".intern());
 	}
 
 	/**
