@@ -14,8 +14,6 @@ public class SourcetreeTest {
 		System.out.println(js);
 		js = JSONObject.toJSONString(js);
 		System.out.println(js);
-		int a=002;
-    feature-001
-		123
+		wo shi 002
 	}
 }
