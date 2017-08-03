@@ -8,10 +8,16 @@ public class StringTest {
 	public static void main(String[] args) {
 		System.out.println(toDate("20170329 132324"));
 		System.out.println("abc".intern());
+		String str = "123456789";
+		System.out.println(str.substring(0, 3));// 截取索引0到2的char
+		int a = 10;
+		int b = -5;
+		System.out.println(String.format("a = %s,b = %s", a, b));// 取值加字符串拼接
 	}
 
 	/**
 	 * 字符串转成想要的日期格式
+	 * 
 	 * @param str
 	 * @return
 	 */
