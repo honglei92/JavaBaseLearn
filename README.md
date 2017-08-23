@@ -1,3 +1,4 @@
-# javaBaseDemo  JAVA鍩虹
-#### 鍙嶅皠鍘熺悊
-#### socket tcp udp 閫氫俊
+# javaBaseDemo  JAVA基础
+#### 反射原理
+#### socket tcp udp 通信
+#### string
