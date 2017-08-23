@@ -14,8 +14,5 @@ public class Jsontest {
 		System.out.println(js);
 		js = JSONObject.toJSONString(js);
 		System.out.println(js);
-		000000000
-		int a=002;
-		789
 	}
 }
