@@ -6,7 +6,7 @@ import java.util.Map;
 public class MapTest {
 	public static void main(String[] args) {
 		Map<String, String> map = new HashMap<>();
-		map.put("name", "ÍõĞ¡À×");
+		map.put("name", "ç‹å®é›·");
 		System.out.println(map.get("name"));
 	}
 }

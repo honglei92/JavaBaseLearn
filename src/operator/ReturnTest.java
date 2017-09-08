@@ -1,13 +1,13 @@
 package operator;
 
 /**
- * @author Administrator 返回测试
+ * @author Administrator return 璇彞
  */
 public class ReturnTest {
 	public static void main(String[] args) {
 		int a = 50;
 		String level = getLevel(a);
-		System.out.println("成绩:" + level);
+		System.out.println("鎴愮哗:" + level);
 	}
 
 	private static String getLevel(int a) {
@@ -24,6 +24,6 @@ public class ReturnTest {
 		} catch (Exception e) {
 			// TODO: handle exception
 		}
-		return "成绩无效";
+		return "鎴愮哗鏃犳晥";
 	}
 }

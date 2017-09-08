@@ -15,25 +15,25 @@ import java.security.cert.Certificate;
 import sun.misc.BASE64Encoder;
 
 /**
- * µ¼³öÖ¤Êé(base64)£¬µ¼³öË½Ô¿£¬µ¼³ö¹«Ô¿
+ * ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½(base64)keystoreåˆ°å¤„ceræ–‡ä»¶
  * 
  * @author happyqing
  */
 public class ExportCert {
 
-	// µ¼³öÖ¤Êé base64¸ñÊ½
+	// ï¿½ï¿½ï¿½ï¿½Ö¤ï¿½ï¿½ base64ï¿½ï¿½Ê½
 	public static void exportCert(KeyStore keystore, String alias, String exportFile) throws Exception {
 		Certificate cert = keystore.getCertificate(alias);
 		BASE64Encoder encoder = new BASE64Encoder();
 		String encoded = encoder.encode(cert.getEncoded());
 		FileWriter fw = new FileWriter(exportFile);
-		fw.write("-----BEGIN CERTIFICATE-----\r\n"); // ·Ç±ØÐë
+		fw.write("-----BEGIN CERTIFICATE-----\r\n"); // ï¿½Ç±ï¿½ï¿½ï¿½
 		fw.write(encoded);
-		fw.write("\r\n-----END CERTIFICATE-----"); // ·Ç±ØÐë
+		fw.write("\r\n-----END CERTIFICATE-----"); // ï¿½Ç±ï¿½ï¿½ï¿½
 		fw.close();
 	}
 
-	// µÃµ½KeyPair
+	// ï¿½Ãµï¿½KeyPair
 	public static KeyPair getKeyPair(KeyStore keystore, String alias, char[] password) {
 		try {
 			Key key = keystore.getKey(alias, password);
@@ -49,25 +49,25 @@ public class ExportCert {
 		return null;
 	}
 
-	// µ¼³öË½Ô¿
+	// ï¿½ï¿½ï¿½ï¿½Ë½Ô¿
 	public static void exportPrivateKey(PrivateKey privateKey, String exportFile) throws Exception {
 		BASE64Encoder encoder = new BASE64Encoder();
 		String encoded = encoder.encode(privateKey.getEncoded());
 		FileWriter fw = new FileWriter(exportFile);
-		fw.write("¡ª¨CBEGIN PRIVATE KEY¡ª¨C\r\n"); // ·Ç±ØÐë
+		fw.write("ï¿½ï¿½ï¿½CBEGIN PRIVATE KEYï¿½ï¿½ï¿½C\r\n"); // ï¿½Ç±ï¿½ï¿½ï¿½
 		fw.write(encoded);
-		fw.write("\r\n¡ª¨CEND PRIVATE KEY¡ª¨C"); // ·Ç±ØÐë
+		fw.write("\r\nï¿½ï¿½ï¿½CEND PRIVATE KEYï¿½ï¿½ï¿½C"); // ï¿½Ç±ï¿½ï¿½ï¿½
 		fw.close();
 	}
 
-	// µ¼³ö¹«Ô¿
+	// ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô¿
 	public static void exportPublicKey(PublicKey publicKey, String exportFile) throws Exception {
 		BASE64Encoder encoder = new BASE64Encoder();
 		String encoded = encoder.encode(publicKey.getEncoded());
 		FileWriter fw = new FileWriter(exportFile);
-		fw.write("¡ª¨CBEGIN PUBLIC KEY¡ª¨C\r\n"); // ·Ç±ØÐë
+		fw.write("ï¿½ï¿½ï¿½CBEGIN PUBLIC KEYï¿½ï¿½ï¿½C\r\n"); // ï¿½Ç±ï¿½ï¿½ï¿½
 		fw.write(encoded);
-		fw.write("\r\n¡ª¨CEND PUBLIC KEY¡ª¨C"); // ·Ç±ØÐë
+		fw.write("\r\nï¿½ï¿½ï¿½CEND PUBLIC KEYï¿½ï¿½ï¿½C"); // ï¿½Ç±ï¿½ï¿½ï¿½
 		fw.close();
 	}
 

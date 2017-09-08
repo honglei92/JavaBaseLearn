@@ -8,15 +8,27 @@ public class StringTest {
 	public static void main(String[] args) {
 		System.out.println(toDate("20170329 132324"));
 		System.out.println("abc".intern());
-		String str = "123456789";
-		System.out.println(str.substring(0, 3));// ½ØÈ¡Ë÷Òı0µ½2µÄchar
+		String str = "123";
+		System.out.println(str.substring(0, 2));// æˆªå–ç¬¬0,1ä½
+		System.out.println(str.substring(2, 3));// æˆªå–ç¬¬2ä½
 		int a = 10;
 		int b = -5;
-		System.out.println(String.format("a = %s,b = %s", a, b));// È¡Öµ¼Ó×Ö·û´®Æ´½Ó
+		System.out.println(String.format("a = %s,b = %s", a, b));// È¡Öµï¿½ï¿½ï¿½Ö·ï¿½ï¿½ï¿½Æ´ï¿½ï¿½
+		String info = "jike://test/test1queryId=1503975930185&authId=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJqd3QiLCJpYXQiOjE1MDM5NzU5NDEsImlzcyI6IjE0MDMyMUMxNDk2NTcyNjMwMDAwQGppa2Vjb21wYW55IiwiZXhwIjoxNTA2NjU0MzQxfQ.KBsCFBeQ15YMbE83u_zCzSAcUttn8TEL7epcCdheOes";
+		System.out.println(getQueryId(info));
+		System.out.println("æ¯”ä»·:" + CompareUtil.compareDouble("2.35%", "10.87%"));
+
+	}
+
+	private static String getQueryId(String info) {
+		String temp = "";
+		temp = info.substring(25, 38);
+		return temp;
+
 	}
 
 	/**
-	 * ×Ö·û´®×ª³ÉÏëÒªµÄÈÕÆÚ¸ñÊ½
+	 * ï¿½Ö·ï¿½ï¿½ï¿½×ªï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½ï¿½Ú¸ï¿½Ê½
 	 * 
 	 * @param str
 	 * @return
