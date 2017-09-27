@@ -13,22 +13,22 @@ public class StringTest {
 		System.out.println(str.substring(2, 3));// 截取第2位
 		int a = 10;
 		int b = -5;
-		System.out.println(String.format("a = %s,b = %s", a, b));// ȡֵ���ַ���ƴ��
+		System.out.println(String.format("a = %s,b = %s", a, b));// 字符串拼接
 		String info = "jike://test/test1queryId=1503975930185&authId=eyJhbGciOiJIUzI1NiJ9.eyJqdGkiOiJqd3QiLCJpYXQiOjE1MDM5NzU5NDEsImlzcyI6IjE0MDMyMUMxNDk2NTcyNjMwMDAwQGppa2Vjb21wYW55IiwiZXhwIjoxNTA2NjU0MzQxfQ.KBsCFBeQ15YMbE83u_zCzSAcUttn8TEL7epcCdheOes";
-		System.out.println(getQueryId(info));
+		System.out.println(getQueryId(info));// 字符串截取
 		System.out.println("比价:" + CompareUtil.compareDouble("2.35%", "10.87%"));
-
+		String ab = "1.2234123";
+		System.out.println(getPointLength(ab) + "");
 	}
 
 	private static String getQueryId(String info) {
 		String temp = "";
 		temp = info.substring(25, 38);
 		return temp;
-
 	}
 
 	/**
-	 * �ַ���ת����Ҫ�����ڸ�ʽ
+	 * 字符串转指定格式时间
 	 * 
 	 * @param str
 	 * @return
@@ -44,5 +44,14 @@ public class StringTest {
 		}
 		String str1 = sdf1.format(date);
 		return str1;
+	}
+
+	/**
+	 * @param ab
+	 * @return 获取小数点后位数
+	 */
+	private static int getPointLength(String ab) {
+		int length = ab.split("\\.")[1].length();
+		return length;
 	}
 }
