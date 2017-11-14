@@ -3,11 +3,14 @@ package generic;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * @author Administrator æ³›å‹
+ */
 public class GenericTest {
 	public static void main(String[] args) {
 		List<String> list = new ArrayList<String>();
-		list.add("Êó±ê");
-		list.add("¼üÅÌ");
+		list.add("123");
+		list.add("abc");
 		for (int i = 0; i < list.size(); i++) {
 			String str = (String) list.get(i);
 			System.out.println(str);

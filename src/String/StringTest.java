@@ -19,6 +19,7 @@ public class StringTest {
 		System.out.println("比价:" + CompareUtil.compareDouble("2.35%", "10.87%"));
 		String ab = "1.2234123";
 		System.out.println(getPointLength(ab) + "");
+		System.out.println("value of:" + String.valueOf(-5));
 	}
 
 	private static String getQueryId(String info) {
