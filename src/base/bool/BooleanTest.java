@@ -1,4 +1,4 @@
-package bool;
+package base.bool;
 
 /**
  * @author Administrator 布尔测试

@@ -1,4 +1,4 @@
-package String;
+package base.string;
 
 /**
  * @author Administrator 比较的工具类
