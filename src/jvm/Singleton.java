@@ -53,9 +53,43 @@ public class Singleton {
 		}
 		return singleton;
 	}*/
-	//方法六
+	//方法六  懒汉式 (线程安全 同步代码块) 不可用
+	/*private static Singleton singleton;
+	public static Singleton getInstance(){
+		if (singleton==null) {
+			synchronized (Singleton.class) {
+				singleton=new Singleton();
+			}
+		}
+		return singleton;
+	}*/
 	
-	//方法七
+	//方法七   双重检查 推荐用
+	/*private static volatile Singleton singleton;
+	public static Singleton getInstance(){
+		if(singleton==null){
+			synchronized (Singleton.class) {
+				if (singleton==null) {
+					singleton=new Singleton();
+				}
+			}
+		}
+		return singleton;
+	}*/
 	
-	//方法八
+	//方法八  静态内部类  推荐用
+	/*private static class SingletonInstance{
+		private static final Singleton INSTANCE=new Singleton();
+	}
+	public static Singleton getInstance(){
+		return SingletonInstance.INSTANCE;
+	}*/
+	//方法九 枚举 推荐用
+	public enum SingletonEnum{
+		INSTANCE;
+		public void whateverMethod(){
+			
+		}
+	}
+	
 }
