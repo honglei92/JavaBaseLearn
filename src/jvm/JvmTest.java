@@ -16,5 +16,6 @@ public class JvmTest {
 	public static void main(String[] args) {
 		System.out.println("main");
 		JvmTest jvmTest = new JvmTest();
+		System.out.println(Runtime.getRuntime().maxMemory() / 1024 / 1024 + "M");
 	}
 }

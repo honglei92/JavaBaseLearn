@@ -7,7 +7,7 @@ public abstract class Animal {
 	}
 
 	public Animal(String home) {
-		System.out.println("ÎÒÃÇµÄ¼Ò×åÊÇ:" + home);
+		System.out.println("çˆ¶ç±»Animal:" + home);
 	}
 
 	abstract void printDay();
@@ -17,7 +17,7 @@ public abstract class Animal {
 	}
 
 	public void eat() {
-		System.out.println("ÎÒÒª³ÔÊ³Îï");
+		System.out.println("åƒä¸œè¥¿");
 	}
 
 	protected void move() {
@@ -25,7 +25,7 @@ public abstract class Animal {
 	}
 
 	class Size {
-		// ÄÚ²¿Àà
+		// ï¿½Ú²ï¿½ï¿½ï¿½
 		public Size() {
 		}
 
@@ -33,7 +33,7 @@ public abstract class Animal {
 		private String height;
 
 		public void show() {
-			System.out.println("ÎÒµÄsizeÊÇXXL");
+			System.out.println("XXL");
 		}
 	}
 }

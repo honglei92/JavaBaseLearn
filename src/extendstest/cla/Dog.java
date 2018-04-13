@@ -3,44 +3,43 @@ package extendstest.cla;
 import extendstest.inter.StudyEnglish;
 
 public class Dog extends Animal implements StudyEnglish {
-	// ³éÏóÀà¿ÉÒÔÊµÏÖ½Ó¿Ú²»ÖØĞ´Æä·½·¨
 	public static void main(String[] args) {
 		Dog dog = new Dog();
-		System.out.println(dog.type);// ¼Ì³Ğ¸¸ÀàµÄÊôĞÔ
-		System.out.println(dog.add(1, 2));// ¼Ì³Ğ¸¸ÀàµÄ·½·¨
+		System.out.println(dog.type);
+		System.out.println(dog.add(1, 2));
 		dog.eat();
 		dog.printDay();
 		dog.study();
 		dog.studyEnglish();
-		Size size = dog.new Size();// ÄÚ²¿ÀàµÄÊ¹ÓÃ
+		Size size = dog.new Size();
 		size.show();
 	}
 
 	public Dog() {
-		super("¶¯Îï");// µ÷ÓÃ¸¸Àà¹¹Ôì·½·¨
+		super("æˆ‘ä»¬æ˜¯åŠ¨ç‰©");
 	}
 
 	public void eat() {
-		System.out.println("ÎÒÒª³Ô¹·Á¸");// ¸²¸Ç¸¸ÀàµÄ·½·¨
+		System.out.println("ç‹—ç‹—åƒç‹—å¨˜");
 	}
 
 	@Override
 	void printDay() {
-		System.out.println("Today is ThursDay");// ÊµÏÖ¸¸Àà³éÏó·½·¨
+		System.out.println("Today is ThursDay");
 	}
 
 	@Override
 	public void study() {
-		System.out.println("study  Ñ§Ï°");// ÊµÏÖ½Ó¿ÚµÄ¸¸½Ó¿Ú
+		System.out.println("study  ");
 	}
 
 	@Override
 	public void studyEnglish() {
-		System.out.println("studyEnglish  Ñ§Ï°Ó¢Óï");// ÊµÏÖ½Ó¿Ú
+		System.out.println("studyEnglish  ");
 	}
 
 	@Override
 	protected void move() {
-		super.move();// ÖØĞ´¸¸ÀàÊÜ±£»¤µÄ·½·¨
+		super.move();
 	}
 }
