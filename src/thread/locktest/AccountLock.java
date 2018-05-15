@@ -10,7 +10,7 @@ public class AccountLock {
 	private String accountNo;
 	private double balance;
 	/**
-	 * true±êÊ¶Ã»Ç® false±êÊ¶ÓĞÇ®
+	 * trueï¿½ï¿½Ê¶Ã»Ç® falseï¿½ï¿½Ê¶ï¿½ï¿½Ç®
 	 */
 	private boolean flag = false;
 
@@ -36,9 +36,9 @@ public class AccountLock {
 				// this.wait();
 				con.await();
 			} else {
-				System.out.println(Thread.currentThread().getName() + "È¡Ç®£º" + drawAmount);
+				System.out.println(Thread.currentThread().getName() + "æ”¯å‡º" + drawAmount);
 				balance = balance - drawAmount;
-				System.out.println("Óà¶î:" + balance);
+				System.out.println("ä½™é¢:" + balance);
 				flag = false;
 				// this.notifyAll();
 				con.signalAll();
@@ -51,7 +51,7 @@ public class AccountLock {
 	}
 
 	/**
-	 * ´æÇ®
+	 * ï¿½ï¿½Ç®
 	 * 
 	 * @param depositAmount
 	 */
@@ -62,9 +62,9 @@ public class AccountLock {
 				// this.wait();
 				con.await();
 			} else {
-				System.out.println(Thread.currentThread().getName() + "´æÇ®£º" + depositAmount);
+				System.out.println(Thread.currentThread().getName() + "æ”¶å…¥" + depositAmount);
 				balance = balance + depositAmount;
-				System.out.println("ÕË»§Óà¶îÎª:" + balance);
+				System.out.println("ä½™é¢:" + balance);
 				flag = true;
 				// this.notifyAll();
 				con.signalAll();

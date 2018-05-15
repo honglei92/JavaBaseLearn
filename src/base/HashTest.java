@@ -1,7 +1,7 @@
 package base;
 
 /**
- * @author Administrator hashcode测试
+ * @author Administrator hashcode
  */
 public class HashTest {
 	public static void main(String[] args) {

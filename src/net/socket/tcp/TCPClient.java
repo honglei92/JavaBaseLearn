@@ -20,14 +20,14 @@ public class TCPClient {
 		Socket socket = new Socket("localhost", 13982);
 		OutputStream os = socket.getOutputStream();
 		PrintWriter pw = new PrintWriter(os);
-		pw.write("ÓÃ»§Ãû£ºadmin£»ÃÜÂë:123");
+		pw.write("ç”¨æˆ·å:adminå¯†ç :123");
 		pw.flush();
 		socket.shutdownOutput();
 		InputStream is = socket.getInputStream();
 		BufferedReader br = new BufferedReader(new InputStreamReader(is));
 		String info = null;
 		while ((info = br.readLine()) != null) {
-			System.out.println("ÎÒÊÇ¿Í»§¶Ë£¬·şÎñÆ÷Ëµ:" + "==" + i + "==" + info);
+			System.out.println("ï¿½ï¿½ï¿½Ç¿Í»ï¿½ï¿½Ë£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ëµ:" + "==" + i + "==" + info);
 		}
 		br.close();
 		is.close();
