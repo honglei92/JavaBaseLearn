@@ -1,4 +1,4 @@
-package operator;
+package base.operator;
 
 /**
  * @author Administrator 移位运算
