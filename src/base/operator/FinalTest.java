@@ -1,4 +1,4 @@
-package base;
+package base.operator;
 
 /**
  * final修饰一个对象，能否调用对象修改属性的方法

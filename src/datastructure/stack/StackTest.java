@@ -3,7 +3,7 @@ package datastructure.stack;
 import java.util.Stack;
 
 /**
- * Õ»²âÊÔ
+ * æ ˆæµ‹è¯•
  *
  * @author Administrator
  */

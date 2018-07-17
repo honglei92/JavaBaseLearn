@@ -11,11 +11,20 @@ import java.util.List;
  * time:2018/7/16
  */
 public class ArraysTest {
-    static String[] mArray = {"3", "2", "1", "9"};
+    static String[] mArray = {"3", "2", "1", "9" };
+    static String[] mArray1 = {"3", "2", "1", "8" };
 
     public static void main(String[] args) {
 //        sort();
-        fill();
+//        fill();
+        equals();
+    }
+
+    /**
+     * 比较
+     */
+    private static void equals() {
+        L.p("是否相等:" + Arrays.equals(mArray, mArray1));
     }
 
     /**

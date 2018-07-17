@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.algorithm;
 
 /**
  * 手写递归实现5的阶乘
@@ -12,10 +12,12 @@ public class DiguiTest {
     }
 
     private static int digui(int i) {
-        if (i > 1) {
-            return i * digui(i - 1);
-        } else {
+        if (i == 1) {
             return 1;
+        } else if (i == 0) {
+            return 1;
+        } else {
+            return i * digui(i - 1);
         }
     }
 }

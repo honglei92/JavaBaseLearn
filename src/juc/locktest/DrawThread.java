@@ -1,17 +1,17 @@
-package thread.synchronizedtest;
+package juc.locktest;
 
 public class DrawThread implements Runnable {
-	private Account account;
+	private AccountLock account;
 	private double drawAmount;
 
-	public DrawThread(Account account, double drawAmount) {
+	public DrawThread(AccountLock account, double drawAmount) {
 		this.account = account;
 		this.drawAmount = drawAmount;
 	}
 
 	@Override
 	public void run() {
-		for (int i = 0; i < 100; i++) {
+		for (int i = 0; i < 3; i++) {
 			account.draw(drawAmount);
 		}
 	}

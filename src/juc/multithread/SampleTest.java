@@ -1,4 +1,4 @@
-package thread.multithread;
+package juc.multithread;
 
 import java.util.ArrayList;
 import java.util.List;

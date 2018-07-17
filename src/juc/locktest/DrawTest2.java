@@ -1,4 +1,4 @@
-package thread.locktest;
+package juc.locktest;
 
 public class DrawTest2 {
 	public static void main(String[] args) {

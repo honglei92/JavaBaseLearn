@@ -5,13 +5,13 @@ import util.L;
 public class Test {
     public static void main(String[] args) {
 //        testAdd();
-//        test();
+        test();
 //        testEquals();
-        testBitOperationTest();
+//        testBitOperationTest();
     }
 
     /**
-     * 位运算
+     * 位运算  与 或 非 异或
      */
     private static void testBitOperationTest() {
         //101

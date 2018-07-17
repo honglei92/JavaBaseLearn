@@ -1,4 +1,4 @@
-package thread.locktest;
+package juc.locktest;
 
 public class DepositThread implements Runnable {
 	private AccountLock account;

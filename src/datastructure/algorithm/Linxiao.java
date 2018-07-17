@@ -1,4 +1,4 @@
-package datastructure;
+package datastructure.algorithm;
 
 /**
  * 判断一个数是否是3的n次方
