@@ -1,4 +1,4 @@
-package javawhl.base.annotation;
+package javawhl.base.annotation.test1_1;
 
 public class AnnoTest1 {
     public static void main(String[] args) throws

@@ -22,17 +22,17 @@ public class URLCase {
      */
     private static void readWebpageContent() throws IOException {
         URL url = new URL("http://developer.51cto.com/art/201509/490775.htm");
-        InputStream is = url.openStream();// openStream������ȡ�ֽ�������
-        InputStreamReader isr = new InputStreamReader(is, "UTF-8");// ���ֽ�������ת�����ַ�������
-        BufferedReader br = new BufferedReader(isr);// Ϊ�ַ�������ӻ��壬���Ч��
-        String data = br.readLine();// ��ȡ����
+        InputStream is = url.openStream();//
+        InputStreamReader isr = new InputStreamReader(is, "UTF-8");//
+        BufferedReader br = new BufferedReader(isr);//
+        String data = br.readLine();//
         while (data != null) {
-            System.out.println(data);// �������
+            System.out.println(data);//
             data = br.readLine();
         }
-        br.close();// �رջ���
-        isr.close();// �ر��ַ���
-        is.close();// �ر��ֽ���
+        br.close();//
+        isr.close();//
+        is.close();//
     }
 
     /**

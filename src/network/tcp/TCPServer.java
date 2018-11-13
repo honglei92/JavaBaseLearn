@@ -1,4 +1,4 @@
-package net.socket.tcp;
+package network.tcp;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,36 +9,40 @@ import java.io.PrintWriter;
 import java.net.ServerSocket;
 import java.net.Socket;
 
+/**
+ * æœåŠ¡ç«¯
+ */
 public class TCPServer {
-	public static void main(String[] args) throws IOException {
-		for (int i = 0; i < 10; i++) {
-			onServer(i);
-		}
-	}
+    public static void main(String[] args) throws IOException {
+        for (int i = 0; i < 10; i++) {
+            onServer(i);
+        }
+    }
 
-	private static void onServer(int i) throws IOException {
-		ServerSocket serverSocket = new ServerSocket(13982);
-		Socket socket = serverSocket.accept();
-		InputStream is = socket.getInputStream();
-		InputStreamReader isr = new InputStreamReader(is);
-		BufferedReader br = new BufferedReader(isr);
-		String info = null;
-		while ((info = br.readLine()) != null) {
-			System.out.println("ÎÒÊÇ·şÎñÆ÷£¬¿Í»§¶ËËµ£º" + "==" + i + "==" + info);
-		}
-		socket.shutdownInput();
-		OutputStream os = socket.getOutputStream();
-		PrintWriter pw = new PrintWriter(os);
-		pw.write("»¶Ó­Äú!");
-		pw.flush();
-
-		pw.close();
-		os.close();
-		br.close();
-		isr.close();
-		is.close();
-		socket.close();
-		serverSocket.close();
-	}
-
+    private static void onServer(int i) throws IOException {
+        ServerSocket serverSocket = new ServerSocket(13982);
+        Socket socket = serverSocket.accept();
+        //æ”¶æ¶ˆæ¯
+        InputStream is = socket.getInputStream();
+        InputStreamReader isr = new InputStreamReader(is);
+        BufferedReader br = new BufferedReader(isr);
+        String info;
+        while ((info = br.readLine()) != null) {
+            System.out.println("æˆ‘æ˜¯æœåŠ¡å™¨,æ”¶åˆ°ä¿¡æ¯:" + i + "==" + info);
+        }
+        socket.shutdownInput();
+        //å‘æ¶ˆæ¯
+        OutputStream os = socket.getOutputStream();
+        PrintWriter pw = new PrintWriter(os);
+        pw.write("ç°åœ¨æ˜¯ï¼š"+System.currentTimeMillis());
+        pw.flush();
+        //å…³é—­è¿æ¥
+        pw.close();
+        os.close();
+        br.close();
+        isr.close();
+        is.close();
+        socket.close();
+        serverSocket.close();
+    }
 }
