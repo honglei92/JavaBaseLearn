@@ -7,6 +7,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 /**
  * author:https://github.com/honglei92
  * time:2018/7/17
+ * 原子类
  */
 public class AtomicIntegerTest {
     static int a = 1;

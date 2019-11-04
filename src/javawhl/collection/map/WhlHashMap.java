@@ -1,7 +1,5 @@
 package javawhl.collection.map;
 
-import org.jetbrains.annotations.NotNull;
-import org.jetbrains.annotations.Nullable;
 
 import java.io.Serializable;
 import java.util.AbstractMap;
@@ -43,7 +41,6 @@ public class WhlHashMap<K, V> extends AbstractMap<K, V> implements Map<K, V>, Cl
         return null;
     }
 
-    @Nullable
     @Override
     public V put(K key, V value) {
         return null;
@@ -55,7 +52,7 @@ public class WhlHashMap<K, V> extends AbstractMap<K, V> implements Map<K, V>, Cl
     }
 
     @Override
-    public void putAll(@NotNull Map<? extends K, ? extends V> m) {
+    public void putAll(Map<? extends K, ? extends V> m) {
 
     }
 
@@ -64,19 +61,16 @@ public class WhlHashMap<K, V> extends AbstractMap<K, V> implements Map<K, V>, Cl
 
     }
 
-    @NotNull
     @Override
     public Set<K> keySet() {
         return null;
     }
 
-    @NotNull
     @Override
     public Collection<V> values() {
         return null;
     }
 
-    @NotNull
     @Override
     public Set<Entry<K, V>> entrySet() {
         return null;
@@ -97,7 +91,6 @@ public class WhlHashMap<K, V> extends AbstractMap<K, V> implements Map<K, V>, Cl
 
     }
 
-    @Nullable
     @Override
     public V putIfAbsent(K key, V value) {
         return null;
@@ -113,7 +106,6 @@ public class WhlHashMap<K, V> extends AbstractMap<K, V> implements Map<K, V>, Cl
         return false;
     }
 
-    @Nullable
     @Override
     public V replace(K key, V value) {
         return null;

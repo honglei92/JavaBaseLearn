@@ -1,13 +1,10 @@
 package javawhl.juc.chapter5;
 
-import net.jcip.annotations.GuardedBy;
-
 import java.util.HashSet;
 import java.util.Random;
 import java.util.Set;
 
 public class Chapter5_6 {
-    @GuardedBy("this")
     private final Set<Integer> set = new HashSet<>();
     public static void main(String[] args){
     }

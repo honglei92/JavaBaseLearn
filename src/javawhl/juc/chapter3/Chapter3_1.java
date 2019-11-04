@@ -1,6 +1,5 @@
 package javawhl.juc.chapter3;
 
-import net.jcip.annotations.NotThreadSafe;
 
 /**
  * 第三章、对象的共享
@@ -11,7 +10,6 @@ import net.jcip.annotations.NotThreadSafe;
  * volatile变量
  */
 
-@NotThreadSafe
 public class Chapter3_1 {
     public static void main(String[] args) {
         Chapter3_1_3 mutabelnteger = new Chapter3_1_3();
