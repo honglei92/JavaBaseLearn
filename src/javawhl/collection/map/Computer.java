@@ -1,4 +1,4 @@
-package javawhl.builtinlib.map;
+package javawhl.collection.map;
 
 /**
  * author:https://github.com/honglei92

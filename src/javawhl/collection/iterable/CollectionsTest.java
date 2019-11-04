@@ -1,4 +1,4 @@
-package javawhl.builtinlib.iterable;
+package javawhl.collection.iterable;
 
 /**
  * Collections类的方法实践

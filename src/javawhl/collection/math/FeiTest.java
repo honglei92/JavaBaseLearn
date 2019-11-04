@@ -1,4 +1,4 @@
-package javawhl.builtinlib.math;
+package javawhl.collection.math;
 
 public class FeiTest {
     public static void main(String[] args) {

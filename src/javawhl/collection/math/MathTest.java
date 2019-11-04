@@ -1,4 +1,4 @@
-package javawhl.builtinlib.math;
+package javawhl.collection.math;
 
 import util.L;
 

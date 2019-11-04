@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FeiTest",
+            "request": "launch",
+            "mainClass": "javawhl.collection.math.FeiTest",
+            "projectName": "JavaBaseLearn_bf35067b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Test1",
             "request": "launch",
             "mainClass": "Test1"
