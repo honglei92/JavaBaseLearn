@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Jsontest",
+            "request": "launch",
+            "mainClass": "tool.json.Jsontest",
+            "projectName": "JavaBaseLearn_d793301c"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test1",
+            "request": "launch",
+            "mainClass": "test.Test1",
+            "projectName": "JavaBaseLearn_d793301c"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FeiTest",
             "request": "launch",
             "mainClass": "javawhl.collection.math.FeiTest",
