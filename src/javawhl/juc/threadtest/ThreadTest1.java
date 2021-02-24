@@ -1,5 +1,8 @@
 package javawhl.juc.threadtest;
 
+/**
+ * 创建100个线程
+ */
 public class ThreadTest1 {
     public static void main(String[] args) {
         for (int i = 0; i < 100; i++) {

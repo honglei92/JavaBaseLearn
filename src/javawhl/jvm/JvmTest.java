@@ -1,7 +1,7 @@
 package javawhl.jvm;
 
 /**
- * @author Administrator jvm理解
+ * @author Administrator 代码执行顺序
  */
 public class JvmTest {
     /**

@@ -1,5 +1,8 @@
 package javawhl.jvm;
 
+/**
+ * 类的加载器
+ */
 public class ClassLoaderTest {
     public static void main(String[] args) {
         System.out.println(ClassLoader.getSystemClassLoader());
