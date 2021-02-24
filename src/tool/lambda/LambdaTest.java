@@ -1,4 +1,4 @@
-package lambda;
+package tool.lambda;
 
 import java.util.Arrays;
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
  * 
  */
 public class LambdaTest {
-	static String[] data = { "Áõ°î", "º«ÐÅ", "ÏîÓð" };
+	static String[] data = { "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½", "ï¿½ï¿½ï¿½ï¿½" };
 	static List<String> roles = Arrays.asList(data);
 
 	public interface AddInterface {
@@ -17,12 +17,12 @@ public class LambdaTest {
 
 	public static void main(String[] args) {
 
-		// ±éÀúlist¼¯ºÏ
+		// ï¿½ï¿½ï¿½ï¿½listï¿½ï¿½ï¿½ï¿½
 		roles.forEach((role) -> System.out.println(role + ";"));
 		roles.forEach(System.out::println);
 		AddInterface f1 = (int a, int b) -> System.out.println(a + b);
 		f1.test(3, 5);
-		// Ïß³Ì¼òÐ´ Ìæ´úÄäÃûÀà
+		// ï¿½ß³Ì¼ï¿½Ð´ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
 		new Thread(() -> System.out.println("In lambda")).start();
 		mapTest();
 	}

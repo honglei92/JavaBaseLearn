@@ -1,4 +1,4 @@
-package javawhl.builtinlib.iterable.collection.list;
+package javawhl.collection.iterable.collection.list;
 
 import java.util.ArrayList;
 import java.util.LinkedList;
