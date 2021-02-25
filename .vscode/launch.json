@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch RuanZhu",
+            "request": "launch",
+            "mainClass": "javawhl.file.RuanZhu",
+            "projectName": "JavaBaseLearn_bf35067b"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Jsontest",
             "request": "launch",
             "mainClass": "tool.json.Jsontest",
