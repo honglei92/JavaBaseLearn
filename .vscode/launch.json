@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch LeetCode20",
+            "request": "launch",
+            "mainClass": "datastructure.leetcode.LeetCode20",
+            "projectName": "JavaBaseLearn_c29f68d8"
+        },
+        {
+            "type": "java",
+            "name": "Launch LeetCode1",
+            "request": "launch",
+            "mainClass": "datastructure.leetcode.LeetCode1",
+            "projectName": "JavaBaseLearn_c29f68d8"
+        },
+        {
+            "type": "java",
             "name": "Launch RuanZhu",
             "request": "launch",
             "mainClass": "javawhl.file.RuanZhu",
