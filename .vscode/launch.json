@@ -2,6 +2,12 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LeetCode71",
+            "request": "launch",
+            "mainClass": "datastructure.leetcode.LeetCode71"
+        },
+        {
+            "type": "java",
             "name": "Launch LeetCode20",
             "request": "launch",
             "mainClass": "datastructure.leetcode.LeetCode20",
