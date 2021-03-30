@@ -3,7 +3,6 @@ package datastructure.leetcode;
 import java.util.Stack;
 import java.util.Vector;
 
-import jdk.internal.jshell.tool.resources.version;
 
 public class LeetCode20 {
     public static void main(String[] args) {

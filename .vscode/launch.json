@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LeetCode2",
+            "request": "launch",
+            "mainClass": "datastructure.leetcode.LeetCode2",
+            "projectName": "JavaBaseLearn_22e7c337"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LeetCode20",
+            "request": "launch",
+            "mainClass": "datastructure.leetcode.LeetCode20",
+            "projectName": "JavaBaseLearn_22e7c337"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LeetCode71",
             "request": "launch",
             "mainClass": "datastructure.leetcode.LeetCode71"
