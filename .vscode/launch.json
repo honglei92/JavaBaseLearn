@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ListTest",
+            "request": "launch",
+            "mainClass": "javawhl.collection.iterable.collection.list.ListTest",
+            "projectName": "JavaBaseLearn_c29f68d8"
+        },
+        {
+            "type": "java",
             "name": "Launch LeetCode20",
             "request": "launch",
             "mainClass": "datastructure.leetcode.LeetCode20",
