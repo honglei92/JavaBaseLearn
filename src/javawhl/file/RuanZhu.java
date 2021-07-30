@@ -23,8 +23,8 @@ public class RuanZhu {
 
     public static void main(String[] args) {
         System.out.println("arg0");
-        // folderMethod2("D:\\01whl\\07工作文档\\软著申请\\软著代码安卓");
-        folderMethod2("D:\\01whl\\07工作文档\\软著申请\\有赞商城");
+        folderMethod2("D:\\01whl\\07工作文档\\软著申请\\软著代码安卓");
+        // folderMethod2("D:\\01whl\\07工作文档\\软著申请\\有赞商城");
         for (int i = 0; i < 1; i++) {
             buildFile(i);
         }
@@ -65,9 +65,9 @@ public class RuanZhu {
             while ((line = br.readLine()) != null) {
                 // 一次读入一行数据
                 System.out.println(line);
-                // if (line.trim().startsWith("private")) {
-                //     oneFile += "//" + Word.worlds[(int) (Math.random() * 115)] + "\r\n";
-                // }
+                if (line.trim().startsWith("private")) {
+                    oneFile += "//" + Word.worlds[(int) (Math.random() * 115)] + "\r\n";
+                }
                 // if (line.trim().startsWith("@Override")) {
                 //     oneFile += "//" + Word.worlds[(int) (Math.random() * 115)] + "\r\n";
                 // }
@@ -87,8 +87,8 @@ public class RuanZhu {
 
     private static void writeFile(int i, String line) {
         try {
-            // File writeName = new File("D:\\01whl\\07工作文档\\软著申请\\软著输出安卓\\" + i + "output_android.doc"); // 相对路径，如果没有则要建立一个新的output.txt文件
-            File writeName = new File("D:\\01whl\\07工作文档\\软著申请\\" + i + "有赞商城.doc"); // 相对路径，如果没有则要建立一个新的output.txt文件
+            File writeName = new File("D:\\01whl\\07工作文档\\软著申请\\软著输出安卓\\" + i + "output_android_beijinghuairou_tj.doc"); // 相对路径，如果没有则要建立一个新的output.txt文件
+            // File writeName = new File("D:\\01whl\\07工作文档\\软著申请\\" + i + "有赞商城.doc"); // 相对路径，如果没有则要建立一个新的output.txt文件
             if (!writeName.exists())
                 writeName.createNewFile(); // 创建新文件,有同名的文件的话直接覆盖
             try (

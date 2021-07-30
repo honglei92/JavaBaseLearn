@@ -1,7 +1,9 @@
 {
     "configurations": [
+        
         {
             "type": "java",
+<<<<<<< HEAD
             "name": "CodeLens (Launch) - LeetCode9",
             "request": "launch",
             "mainClass": "datastructure.leetcode.LeetCode9",
@@ -10,22 +12,12 @@
         {
             "type": "java",
             "name": "CodeLens (Launch) - LeetCode2",
+=======
+            "name": "Launch ListTest",
+>>>>>>> 0fe8058c64e8f6e69232c20821ec0750b74c82a5
             "request": "launch",
-            "mainClass": "datastructure.leetcode.LeetCode2",
-            "projectName": "JavaBaseLearn_22e7c337"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LeetCode20",
-            "request": "launch",
-            "mainClass": "datastructure.leetcode.LeetCode20",
-            "projectName": "JavaBaseLearn_22e7c337"
-        },
-        {
-            "type": "java",
-            "name": "CodeLens (Launch) - LeetCode71",
-            "request": "launch",
-            "mainClass": "datastructure.leetcode.LeetCode71"
+            "mainClass": "javawhl.collection.iterable.collection.list.ListTest",
+            "projectName": "JavaBaseLearn_c29f68d8"
         },
         {
             "type": "java",
