@@ -1,29 +1,72 @@
 package datastructure.leetcode;
 
-import java.util.HashMap;
+/**
+ * 两数相加
+ */
 
 public class LeetCode2 {
+
     public static void main(String[] args) {
-        System.out.println(lengthOfLongestSubstring("pwwkew"));
+        ListNode l1N0 = new ListNode(2);
+        // ListNode l1N1 = new ListNode(4, l1N0);
+        // ListNode l1N2 = new ListNode(3, l1N1);
+
+        // l1N0.next = l1N1;
+        // l1N1.next = l1N2;
+
+        ListNode l2N0 = new ListNode(2);
+        // ListNode l2N1 = new ListNode(4, l2N0);
+        // ListNode l2N2 = new ListNode(3, l2N1);
+
+        // l2N0.next = l2N1;
+        // l2N1.next = l2N2;
+
+        ListNode l3 = addTwoNumber(l1N0, l2N0);
+        System.out.println(l3.val);
     }
 
-    public static int lengthOfLongestSubstring(String s) {
-        if (s.length() == 0) {
-            return 0;
-        }
-        int max = 0;// 最长不重复子串的长度
-        int left = 0;// 字符串中滑动窗口左边的下标
-        HashMap<Character, Integer> hashMap = new HashMap<>();
-        for (int i = 0; i < s.length(); i++) {
-            if (hashMap.containsKey(s.charAt(i))) {
-                // 如果子串含有字符 就把left往当前子串首位+1
-                left = Math.max(left, hashMap.get(s.charAt(i)) + 1);
+    public static ListNode addTwoNumber(ListNode l1, ListNode l2) {
+        ListNode pre = new ListNode(0);
+        ListNode cur = pre;
+        int carry = 0;
+        while (l1 != null || l2 != null) {
+            int x = l1 == null ? 0 : l1.val;
+            int y = l2 == null ? 0 : l2.val;
+            int sum = x + y + carry;
+
+            carry = sum / 10;
+            sum = sum / 10;
+            cur.next = new ListNode(sum);
+
+            cur = cur.next;
+            if (l1 != null) {
+                l1 = l1.next;
             }
-            hashMap.put(s.charAt(i), i);
-            // 当前子串 串尾的下标减去串头的下标 比如 2-4 就是 234 应该是下标之差+1,这里取最大值的意思是 前面已经滑出一个子串长度
-            // 后面又滑出了，这是就两两比较取较长比如pwwkew 这里 pw 和wek
-            max = Math.max(max, i - left + 1);
+            if (l2 != null) {
+                l2 = l2.next;
+            }
         }
-        return max;
+        if (carry == 1) {
+            cur.next = new ListNode(carry);
+        }
+
+        return pre.next;
+    }
+}
+
+class ListNode {
+    int val;
+    ListNode next;
+
+    ListNode() {
+    }
+
+    ListNode(int x) {
+        this.val = x;
+    }
+
+    ListNode(int val, ListNode next) {
+        this.val = val;
+        this.next = next;
     }
 }
