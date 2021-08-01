@@ -4,7 +4,7 @@ package datastructure.leetcode;
  * 两数相加
  */
 
-public class LeetCode2 {
+public class LeetCode2 { 
 
     public static void main(String[] args) {
         ListNode l1N0 = new ListNode(2);
