@@ -1,4 +1,4 @@
-package datastructure.leetcode;
+package leetcode;
 
 /**
  * 两数相加

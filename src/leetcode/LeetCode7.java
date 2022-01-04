@@ -1,4 +1,4 @@
-package datastructure.leetcode;
+package leetcode;
 
 public class LeetCode7 {
     public static void main(String[] args) {

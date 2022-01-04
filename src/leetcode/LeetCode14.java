@@ -5,9 +5,7 @@
  * @Last Modified time: 2021-08-01 17:04:34
  * 最长公共前缀 
  */
-package datastructure.leetcode;
-
-import javawhl.base.objectoriented.modefication.a.C;
+package leetcode;
 
 public class LeetCode14 {
     public static void main(String[] args) {

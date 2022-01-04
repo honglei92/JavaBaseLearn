@@ -1,7 +1,6 @@
-package datastructure.leetcode;
+package leetcode;
 
 import java.util.Stack;
-import java.util.Vector;
 
 
 public class LeetCode20 {
