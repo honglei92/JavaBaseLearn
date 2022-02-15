@@ -12,8 +12,8 @@ public class LeetCode17 {
         System.out.println(System.currentTimeMillis());
         String param = "23";
         for (int i = 0; i < letterCombinations(param).size(); i++) {
-            System.out.println(letterCombinations(param).get(i));
         }
+        System.out.println(letterCombinations(param).size()+"size");
         System.out.println(System.currentTimeMillis());
     }
 
